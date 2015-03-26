@@ -40,7 +40,7 @@ require(['jquery', 'gamejs', 'modules/main', 'modules/globals'], function($, gam
                     $('#gjs-canvas').fadeIn('fast', function() {
                         $('#back-to-page').removeClass('hide');
                         $('#github-ribbon').addClass('hide');
-                        _gaq.push(['_trackPageview', '/play']);
+                        ga.push(['_trackPageview', '/play']);
                         gamejs.ready(main);
                     });
                 });
